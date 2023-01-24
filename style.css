@@ -1,6 +1,6 @@
 @font-face{
-    font-family: explorer;
-    src: url(fonts/Explorers-X34Ko.otf);
+    font-family: Valorant;
+    src: url(fonts/Valorant Font.ttf);
 }
 
 body {
@@ -23,20 +23,15 @@ body {
 
 img {
     width: 75px;
-    height:75px;
-    position: absolute;
-    top:35px;
-    left: 150px;
-}
-
-.logo {
-    font-family: explorer;
-    position: absolute;
-    background-color: rgba(0,0,0,0.7);
-    justify-content: center;
+    height:100px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logo{
+    font-family: Valorant;
+    background-color: rgba(0,0,0,0.7);
     top:200px;
     font-size: 60px;
     text-align: center;
@@ -45,15 +40,15 @@ img {
     line-height: 150px;
     height:150px;
     position: absolute;
+    white-space: nowrap;
 }
 
 .footer {
     position: absolute;
-    color:black;
     bottom: 12px;
+    left:10px;
     width: 100%;
-    font-size: 15px;
-    text-align: center;
+    right: 10px;
 }
 
 .container-right {
@@ -148,7 +143,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(173, 57, 219,0.9);
+    background-color: rgba(173, 57, 219,0.95);
     cursor: pointer;
 }
 
@@ -160,3 +155,26 @@ a {
     display: flex;
     gap: 10px;
 }
+
+@media (max-width: 1000px) {
+    body {
+        display:flex;
+        flex-direction: column;  
+    }
+ .container-left {
+    width:100%;
+    max-height:300px;
+}.logo{
+    font-family: Valorant;
+    background-color: rgba(0,0,0,0.7);
+    top:50px;
+    font-size: 60px;
+} .top-right {
+    max-height:200px;
+} .top-right p {
+    vertical-align: top;
+    position: static;
+    font-size: 20px;
+}
+}
+
