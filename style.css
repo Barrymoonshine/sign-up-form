@@ -99,7 +99,6 @@ ul {
 label,input {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
 }
 
 .bottom-right{

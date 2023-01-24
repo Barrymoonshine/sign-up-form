@@ -24,41 +24,41 @@
         <p>You <em><u>know</u></em> you want to... </p>
         </div>
         <div class="middle-right">
-        <form>
+        <form action="#" method="get">
             Let's do this!
             <ul>
                 <li>
                 <label for="first_name">First name</label>
-                <input type="text" id="name" name="first_name" />
+                <input type="text" id="name" name="first_name" required />
                 </li>
                 <li>
                 <label for="last_name">Second name</label>
-                <input type="text" id="name" name="last_name" />
+                <input type="text" id="name" name="last_name" required />
                 </li>
                 <li>
                 <label for="mail">Email</label>
-                <input type="email" id="mail" name="user_email" />
+                <input type="email" id="mail" name="user_email" required/>
                 </li>
                 <li>
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="user_phone_number" />
+                <input type="tel" id="phone" name="user_phone_number"  min="11" pattern="^[0-9]*$" title="Please enter a valid phone number" required />
                 </li>
                 <li>
                 <label for="password">Password</label>
-                <input type="password" id="password" name="user_password" />
+                <input type="password" id="password" name="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$" title="Please enter a password that is between 8 and 20 characters long and contains at least one number, one capital letter and one special symbol(!@#$%^&*=+-_)" required/>
                 </li>
                 <li>
                 <label for="confirm_password">Confirm password</label>
-                <input type="password" id="password" name="user_password" />
+                <input type="password" id="password" name="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$" title="Please enter a password that is between 8 and 20 characters long and contains at least one number, one capital letter and one special symbol(!@#$%^&*=+-_)" required/>
                 </li>
             </ul>
-        </form>
-        </div>
-        <div class="bottom-right">
-        <li class="button">
+            </div>
+            <div class="bottom-right">
+            <li class="button">
             <label for="Submit form"></label>
-            <button type="submit">Create account</button>
-        </li>
+                <button type="submit">Create account</button>
+            </li>
+        </form>
         <div class="log-in">
             Already have an account? <a href="url">Log in</a>
         </div>
