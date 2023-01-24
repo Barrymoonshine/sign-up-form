@@ -24,8 +24,8 @@
         <p>You <em><u>know</u></em> you want to... </p>
         </div>
         <div class="middle-right">
-        <form action="#" method="get">
-            Let's do this!
+        <form>
+            <h2>Let's do this!</h2>
             <ul>
                 <li>
                 <label for="first_name">First name</label>
@@ -41,22 +41,23 @@
                 </li>
                 <li>
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="user_phone_number"  min="11" pattern="^[0-9]*$" title="Please enter a valid phone number" required />
+                <input type="tel" id="phone" name="user_phone_number"  min="10" pattern="^[0-9]*$" title="Please enter a valid phone number" required />
                 </li>
                 <li>
                 <label for="password">Password</label>
-                <input type="password" id="password" name="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$" title="Please enter a password that is between 8 and 20 characters long and contains at least one number, one capital letter and one special symbol(!@#$%^&*=+-_)" required/>
+                <input type="password"  id="password" name="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$" title="Please enter a password that is between 8 and 20 characters long and contains at least one number, one capital letter and one special symbol(!@#$%^&*=+-_)" required/>
                 </li>
                 <li>
                 <label for="confirm_password">Confirm password</label>
-                <input type="password" id="password" name="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$" title="Please enter a password that is between 8 and 20 characters long and contains at least one number, one capital letter and one special symbol(!@#$%^&*=+-_)" required/>
+                <input type="password"  id="confirm_password" onkeyup="checkPasswords()" name="confirm_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$" title="Please enter a password that is between 8 and 20 characters long and contains at least one number, one capital letter and one special symbol(!@#$%^&*=+-_)" required/>
+                <p id="passwordSupport"> * Passwords do not match </p>
                 </li>
             </ul>
             </div>
             <div class="bottom-right">
             <li class="button">
             <label for="Submit form"></label>
-                <button type="submit">Create account</button>
+                <button id="submitButton" type="submit">Create account</button>
             </li>
         </form>
         <div class="log-in">
