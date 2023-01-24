@@ -115,6 +115,12 @@ input:focus{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+#passwordSupport{
+    font-size: 10px;
+    color: red;
+    position: absolute;
+}
+
 .bottom-right{
     background-color: rgb(227, 234, 241);
     padding: 20px;

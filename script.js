@@ -1,31 +1,19 @@
-// document.getElementById("submitButton").addEventListener("click", (e) => {
-//     getPasswords();
-//     if (password == confirmPassword) {
-//     } else {
-//         alert('Password do not match, please try again')
-//     }
-// })
-
-// function getPasswords() {
-//     password = document.getElementById("password").value;
-//     confirmPassword = document.getElementById("confirm_password").value;
-// }
-
 const passwordSupportMessage = document.getElementById('passwordSupport')
+const passwordElement = document.getElementById("password");
+const passwordConfirmElement = document.getElementById("confirm_password");
 
 passwordSupportMessage.style.visibility = 'hidden';
 
-
 function checkPasswords() {
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirm_password").value;
+    let password = passwordElement.value;
+    let confirmPassword = passwordConfirmElement.value;
     if (password !== confirmPassword) {
-        document.getElementById("password").style.border = "solid 2px rgb(216, 88, 105)";
-        document.getElementById("confirm_password").style.border = "solid 2px rgb(216, 88, 105)";
+        passwordElement.style.border = "solid 2px rgb(216, 88, 105)";
+        passwordConfirmElement.style.border = "solid 2px rgb(216, 88, 105)";
         passwordSupportMessage.style.visibility = 'visible';
     } else {
-        document.getElementById("password").style.border = "solid 2px rgb(141, 235, 161)";
-        document.getElementById("confirm_password").style.border = "solid 2px rgb(141, 235, 161)";
+        passwordElement.style.border = "solid 2px rgb(141, 235, 161)";
+        passwordConfirmElement.style.border = "solid 2px rgb(141, 235, 161)";
         passwordSupportMessage.style.visibility = 'hidden';
     }
 }
