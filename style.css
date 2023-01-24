@@ -4,9 +4,9 @@
 }
 
 body {
-    font-family: explorer;
     margin:0; 
     display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .container-left {
@@ -30,6 +30,7 @@ img {
 }
 
 .logo {
+    font-family: explorer;
     position: absolute;
     background-color: rgba(0,0,0,0.7);
     justify-content: center;
@@ -53,7 +54,6 @@ img {
     width: 100%;
     font-size: 15px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .container-right {
@@ -64,30 +64,44 @@ img {
 }
 
 .top-right {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(227, 234, 241);
-    height:55vh;
+    height:35vh;
     color:rgba(5, 5, 5, 0.8);
-    font-size: 30px;
+    font-size: 25px;
     font-weight:bolder;
     text-align: justify;
-    bottom: 55vh;
     padding:20px;
-    border-bottom: 5px solid rgba(5, 5, 5, 0.8);
 }
 
 .top-right p {
     position: relative;
-    top: 50%;
+    top: 35%;
 }
-
-
 
 .middle-right {
-    position:absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position:relative;
+    border-bottom: 5px solid rgba(5, 5, 5, 0.8);
+    padding: 20px;
 }
 
-.middle-bottom {
-    position:absolute;
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:0;
+    gap:20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label,input {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+button{
+    align-self: flex-start;
 }
 
