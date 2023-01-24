@@ -82,7 +82,7 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position:relative;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    padding: 20px;
+    padding: 40px 20px 40px 20px;
 }
 
 ul {
@@ -90,6 +90,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     padding-left:0;
+    padding-top: 20px;
     gap:20px;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +104,6 @@ label,input {
 
 .bottom-right{
     background-color: rgb(227, 234, 241);
-    margin-top: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -111,7 +111,33 @@ label,input {
     flex-grow: 1;
 }
 
-button{
-    align-self: flex-start;
+.button {
+    list-style: none;
+    margin-top: 20px;
 }
 
+button {
+    list-style: none;
+    background-color: rgba(173, 57, 219,0.8);
+    border: none;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+button:hover {
+    background-color: rgba(173, 57, 219,0.9);
+    cursor: pointer;
+}
+
+a {
+    color: darkslategray;
+}
+
+.log-in{
+    display: flex;
+    gap: 10px;
+}
